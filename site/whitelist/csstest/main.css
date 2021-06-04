@@ -1,0 +1,86 @@
+
+@font-face {
+	font-family: "Chineserocks";
+	src: url('../../font/chineserocks.ttf');
+}
+
+body {
+	background-color: rgb(22, 22, 22);
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	color:#fff;
+}
+
+#bg {
+	position: absolute;
+	background-image:url('../img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin-left:-9px;
+	height: 100%;
+	width: 100%;
+	min-width: 1080px;
+}
+
+.gta-img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.text {
+	margin-top:80px;
+	color:#fff;
+	font-size: 80px;
+	font-weight:bold;
+	font-family: "Chineserocks";
+}
+
+.text2 {
+	color:#fff;
+	font-size: 25px;
+	font-weight:lighter;
+	font-family: "Chineserocks";
+	margin-top:-5px;
+}
+
+#gta-icon {
+	width: 310px;
+	height: 310px;	
+	transform: scale(1.2);
+	transition: transform 1.0s;
+}
+
+#gta-icon:hover {
+	transform: scale(1.4);
+	transition: transform 1.0s;
+}
+
+/* Preloader */
+
+.preloader {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+
+.preloader img {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: calc(50% - 32px);
+}
+
+.preloader div {
+	display: none;
+	/* Preload the Second Pricing Image */
+	background: url(../img/pricing2.jpg) no-repeat 9999px 9999px;
+	background-position: 9999px 9999px;
+}
